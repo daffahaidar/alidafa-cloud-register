@@ -1,0 +1,482 @@
+/*
+Nama: Daffa Haidar Nabil Zufar
+NIM : 2440100456
+Lembar Jawaban Soal Study Kasus
+Link Video Penjelasan: https://youtu.be/XtVjxkoT7tc
+*/
+
+/*CSS Source Code: */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+/* Navigasi Bar Styling */
+nav {
+  align-items: center;
+  background-color: #373b3e;
+  padding: 20px 0;
+  color: white;
+}
+
+/* Logo Styling */
+nav .logo {
+  display: inline;
+}
+
+nav .logo img {
+  width: 150px;
+  padding-left: 65px;
+}
+/* Navbar Menu Styling */
+nav .navbar {
+  display: inline;
+  float: right;
+  padding-right: 70px;
+}
+
+nav .navbar ul li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+nav .navbar ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+nav .navbar ul li a:hover {
+  color: white;
+  text-decoration: none;
+  color: #1c90f6;
+}
+
+/* Title Container Styling */
+.judul {
+  height: 190px;
+  background-image: url("bg.png");
+  background-repeat: no-repeat;
+  background-position: right top;
+}
+/* Title h1 Styling */
+.judul h1 {
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 10px;
+}
+/* Title h3 Styling */
+.judul h3 {
+  text-align: center;
+}
+/* Content Container Styling */
+.container {
+  padding-bottom: 35px;
+  height: 633px;
+  position: relative;
+}
+/* Form Styling */
+.formulir {
+  border-top: 3px solid #ff6a00;
+  box-shadow: -1px 2px 5px 0px rgba(0, 0, 0, 0.75);
+  width: 660px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-bottom: 35px;
+  font-family: Roboto, Helvetica, Tahoma, Arial, sans-serif, SimSun;
+}
+/* Input Country Container Styling */
+.countryform {
+  margin-right: auto;
+  margin-left: auto;
+  width: 518px;
+  margin-top: 42px;
+  height: 38px;
+}
+/* Input Country Styling */
+.countryform select {
+  height: 40px;
+  width: 518px;
+  font-size: 16px;
+  padding-left: 12px;
+  border-color: #d5d5d5;
+  font-family: Roboto, Helvetica, Tahoma, Arial, sans-serif, SimSun;
+}
+/* Text Country Styling */
+.country-info {
+  color: #ff6a00;
+  font-size: 12px;
+  margin-left: 70px;
+  margin-top: 10px;
+  font-family: Roboto, Helvetica, Tahoma, Arial, sans-serif, SimSun;
+}
+/* Email Input Container Styling */
+.emailform {
+  margin-right: auto;
+  margin-left: auto;
+  width: 518px;
+  margin-top: 27px;
+  height: 38px;
+}
+/* Email Input Styling */
+.emailform input {
+  height: 38px;
+  width: 500px;
+  font-size: 16px;
+  border: 1px solid #d5d5d5;
+  padding-left: 15px;
+  font-family: Roboto, Helvetica, Tahoma, Arial, sans-serif, SimSun;
+}
+/* Password Input Container Styling */
+.passwordform {
+  position: relative;
+  margin-top: 30px;
+  margin-right: auto;
+  margin-left: auto;
+  width: 518px;
+  height: 38px;
+}
+/* Password Input Styling */
+.passwordform input {
+  height: 38px;
+  width: 500px;
+  font-size: 16px;
+  border: 1px solid #d5d5d5;
+  padding-left: 15px;
+  font-family: Roboto, Helvetica, Tahoma, Arial, sans-serif, SimSun;
+}
+/* Confirm Input Container Styling */
+.confirmform {
+  position: relative;
+  margin-top: 30px;
+  margin-right: auto;
+  margin-left: auto;
+  width: 518px;
+  height: 38px;
+}
+/* Confirm Input Styling */
+.confirmform input {
+  height: 38px;
+  width: 500px;
+  font-size: 16px;
+  border: 1px solid #d5d5d5;
+  padding-left: 15px;
+  font-family: Roboto, Helvetica, Tahoma, Arial, sans-serif, SimSun;
+}
+/* Show Password Styling */
+.showpw {
+  width: 24px;
+  font-size: 20px;
+  color: #d5d5d5;
+  position: absolute;
+  right: 0;
+  top: 0;
+  margin-top: 6px;
+  margin-right: 10px;
+}
+/* Show Password for Confirm Styling */
+.showcn {
+  width: 24px;
+  font-size: 20px;
+  color: #d5d5d5;
+  position: absolute;
+  right: 0;
+  top: 0;
+  margin-top: 6px;
+  margin-right: 10px;
+}
+/* Hide Password Styling */
+.hidepw {
+  display: none;
+  width: 24px;
+  font-size: 20px;
+  color: black;
+  position: absolute;
+  right: 0;
+  top: 0;
+  margin-top: 6px;
+  margin-right: 11px;
+}
+/* Hide Password for Confirm Styling */
+.hidecn {
+  display: none;
+  width: 24px;
+  font-size: 20px;
+  color: black;
+  position: absolute;
+  right: 0;
+  top: 0;
+  margin-top: 6px;
+  margin-right: 11px;
+}
+/* Warning Email, Password, Confirm Styling */
+.warning {
+  color: red;
+  width: 518px;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 12px;
+  margin-top: 6px;
+}
+/* Agreement Styling */
+.agreement {
+  display: flex;
+  width: 518px;
+  font-size: 12px;
+  margin-left: 70px;
+  margin-top: 30px;
+  color: #373d41;
+  font-family: Roboto, Helvetica, Tahoma, Arial, sans-serif, SimSun;
+}
+/* Agreement Check Styling */
+.agreement .checkbox input {
+  height: 16px;
+  width: 16px;
+}
+/* Agreement Text Styling */
+.agreement .agreetext {
+  margin-left: 10px;
+  width: 500px;
+  font-size: 14px;
+}
+
+.agreement .agreetext a {
+  color: #ff6a00;
+}
+.agreement .agreetext a:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+/* Submit Container Styling */
+.submit {
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 30px;
+
+  width: 518px;
+  height: 40px;
+}
+/* Submit Button Styling */
+.btn-submit {
+  height: 40px;
+  color: #fffffc;
+  width: 517px;
+  cursor: not-allowed;
+  border: none;
+  font-size: 16px;
+  font-family: Roboto, Helvetica, Tahoma, Arial, sans-serif, SimSun;
+}
+/* Text Already Account Styling */
+.signin {
+  text-align: center;
+  margin-top: 40px;
+  color: #373d41;
+}
+
+.signin a {
+  color: #ff6a00;
+  text-decoration: none;
+}
+
+.signin a:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+/* Side Bar Text Styling */
+.promotion {
+  width: 280px;
+  position: absolute;
+  padding: 2px;
+  right: 30px;
+  top: 5px;
+  font-family: Roboto, Helvetica, Tahoma, Arial, sans-serif, SimSun;
+}
+
+.promotion h4 {
+  margin-bottom: 20px;
+}
+
+.promotion h5 {
+  margin-top: 15px;
+}
+
+.promotion p {
+  margin-top: 2px;
+  font-size: 13px;
+  color: #373d41;
+}
+
+.promotion p a {
+  color: #ff6a00;
+}
+/* Contact Button Styling */
+.contact img {
+  height: 40px;
+  position: fixed;
+  z-index: 9;
+  right: 20px;
+  bottom: 50px;
+}
+
+.contact a :hover {
+  cursor: pointer;
+}
+/* Contact Menu Styling */
+.contact-menu {
+  z-index: 99;
+  display: none;
+  box-shadow: -1px 2px 5px 0px rgba(0, 0, 0, 0.75);
+  width: 360px;
+  right: 20px;
+  bottom: 52px;
+  position: fixed;
+  border-radius: 5px;
+}
+
+.contact-menu .chat {
+  background-color: #d5d5d5;
+  padding-bottom: 20px;
+  width: 360px;
+}
+
+.contact-menu .chat .close {
+  width: 10px;
+  text-align: right;
+  font-weight: bold;
+  margin-left: 340px;
+  font-size: 18px;
+  color: grey;
+}
+
+.contact-menu .chat .close:hover {
+  cursor: pointer;
+}
+
+.chat h3 {
+  font-family: sans-serif;
+  font-weight: normal;
+  padding-left: 20px;
+}
+
+.chat p {
+  font-family: sans-serif;
+  font-size: 13px;
+  padding-top: 5px;
+  padding-left: 20px;
+}
+
+.chat .btn-chat {
+  display: block;
+  width: 320px;
+  height: 30px;
+  margin-left: 20px;
+  margin-top: 15px;
+  color: white;
+  background-color: #ff6a00;
+  border: none;
+}
+.chat .btn-sales {
+  display: block;
+  width: 320px;
+  height: 30px;
+  margin-left: 20px;
+  margin-top: 10px;
+  color: #ff6a00;
+  border: 1px solid #ff6a00;
+}
+
+.chat .btn-sales:hover {
+  cursor: pointer;
+  color: white;
+  background-color: #ff6a00;
+}
+
+.chat .btn-chat:hover {
+  cursor: pointer;
+}
+
+.sprt {
+  background-color: white;
+  padding-bottom: 15px;
+}
+
+.sprt h4 {
+  padding-top: 15px;
+  padding-left: 20px;
+  font-weight: normal;
+  font-family: sans-serif;
+}
+
+.sprt p {
+  padding-left: 20px;
+  font-size: 13px;
+  padding-top: 3px;
+  font-family: sans-serif;
+  color: grey;
+}
+
+.sprt a {
+  font-size: 14px;
+  padding-left: 20px;
+  text-decoration: none;
+  color: #ff6a00;
+}
+/* Footer Styling */
+footer {
+  background-color: #373b3e;
+  padding-bottom: 40px;
+  padding-top: 25px;
+}
+
+footer .menu-footer {
+  margin-left: 75px;
+}
+
+footer .menu-footer span {
+  margin-right: 55px;
+}
+
+footer .menu-footer span a {
+  color: white;
+  font-family: Helvetica;
+  font-size: 16px;
+}
+
+footer .menu-footer span a:hover {
+  cursor: pointer;
+  color: #1c90f6;
+}
+
+footer .Aliance {
+  margin-top: 10px;
+  margin-left: 75px;
+}
+
+footer .Aliance span {
+  margin-right: 10px;
+}
+
+footer .Aliance span a {
+  color: white;
+  font-family: Helvetica;
+  font-size: 14px;
+}
+
+footer .Aliance span a:hover {
+  cursor: pointer;
+  color: #1c90f6;
+}
+
+footer .copyright {
+  margin-top: 11px;
+  margin-left: 75px;
+}
+
+footer .copyright span {
+  color: white;
+  font-family: Helvetica;
+  font-size: 14px;
+}
